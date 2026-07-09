@@ -4,6 +4,7 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import Landing from './pages/Landing';
 import Book from './pages/Book';
+import { EmailNotificationBanner } from './components/EmailNotificationBanner';
 
 export default function App() {
   // Sync router with browser path natively
@@ -75,6 +76,9 @@ export default function App() {
 
       {/* Bottom Brand Footer */}
       <Footer currentRoute={currentRoute} setRoute={setRoute} />
+
+      {/* Simulated Email Notification Delivery Banner & Logs Panel */}
+      <EmailNotificationBanner />
     </div>
   );
 }
